@@ -3,10 +3,10 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 
-        Scanner Scanner = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
         System.out.println("Please enter a year");
-        int year = Scanner.nextInt();
+        int year = scanner.nextInt();
 
 
         if ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0)) {
@@ -14,6 +14,9 @@ public class Main {
         } else {
             System.out.println("not Leap Year");
         }
+
+        scanner.close();
+
 
     }
 
